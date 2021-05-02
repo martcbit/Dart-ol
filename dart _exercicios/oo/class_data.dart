@@ -3,8 +3,8 @@ class Data {
   int mes = 0;
   int ano = 0;
 
-  dataFormatada() {
-    print("$dia/$mes/$ano");
+  String dataFormatada() {
+    return ("$dia/$mes/$ano");
   }
 }
 
@@ -19,13 +19,9 @@ main() {
   dataCompra.mes = 08;
   dataCompra.ano = 2021;
 
-/*
-  print(
-      "A Data do Aniversário: ${dataAniversario.dia}/${dataAniversario.mes}/${dataAniversario.ano}");
-  print(
-      "Data da Compra: ${dataCompra.dia}/${dataCompra.mes}/${dataCompra.ano}");
-*/
+  String dataA = dataAniversario.dataFormatada();
+  String dataC = dataCompra.dataFormatada();
 
-  dataAniversario.dataFormatada();
-  dataCompra.dataFormatada();
+  print("A data do Aniversário é: $dataA");
+  print("A data da Compra é: $dataC");
 }
