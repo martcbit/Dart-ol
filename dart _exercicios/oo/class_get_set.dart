@@ -32,6 +32,7 @@ class Pessoa {
     return _idade;
   }
 
+  //double get altura => _altura;
   double get altura {
     return _altura;
   }
