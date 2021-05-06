@@ -34,4 +34,9 @@ void main() {
   cachorro.peso;
   cachorro.comer();
   cachorro.beber_agua();
+
+  Onca onca = Onca("Onça Pintada", 60.0);
+  onca.cacar_presa();
+  onca.comer();
+  onca.beber_agua();
 }
