@@ -13,8 +13,12 @@ void main() {
   ddds[99] = "Maranhão";
   ddds[81] = "Pernanbuco";
 
+  print(ddds);
   print(ddds.keys);
   print(ddds.values);
+
+  ddds.remove(99);
+  print(ddds);
 
   Map<String, dynamic> pessoa = Map();
 
