@@ -4,4 +4,7 @@ class Valores {
 
 void main() {
   Valores.vezesClicado = 2;
+
+  const numero = 3;
+  print(numero);
 }
