@@ -11,8 +11,9 @@ class Animal {
   void beber_agua() {
     print("$nome está se hidratando.");
   }
-  void fazer_som(){
-    print("$nome está fazendo algum som!!")
+
+  void fazer_som() {
+    print("$nome está fazendo algum som!!");
   }
 }
 
@@ -21,13 +22,19 @@ class Cachorro extends Animal {
 
   Cachorro(String nome, double peso, this.raca) : super(nome, peso);
 
-  void fazer_som(){
-    print("$nome está fazendo algum som!!")
+  @override
+  void fazer_som() {
+    print("$nome está Latindo!!");
   }
 }
 
 class Onca extends Animal {
   Onca(String nome, double peso) : super(nome, peso);
+
+  @override
+  void fazer_som() {
+    print("$nome está Rugindo!!");
+  }
 
   void cacar_presa() {
     print("A $nome está caçando a sua presa.");
@@ -41,9 +48,11 @@ void main() {
   cachorro.peso;
   cachorro.comer();
   cachorro.beber_agua();
+  cachorro.fazer_som();
 
   Onca onca = Onca("Onça Pintada", 60.0);
   onca.cacar_presa();
   onca.comer();
   onca.beber_agua();
+  onca.fazer_som();
 }
