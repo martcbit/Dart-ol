@@ -26,6 +26,11 @@ class Cachorro extends Animal {
   void fazer_som() {
     print("$nome está Latindo!!");
   }
+
+  @override
+  String toString() {
+    return "Cachorro | Nome: $nome, Peso: $peso Kg, Raça: $raca,";
+  }
 }
 
 class Onca extends Animal {
@@ -55,4 +60,6 @@ void main() {
   onca.comer();
   onca.beber_agua();
   onca.fazer_som();
+
+  print(cachorro);
 }
