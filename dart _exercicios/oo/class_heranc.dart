@@ -44,6 +44,11 @@ class Onca extends Animal {
   void cacar_presa() {
     print("A $nome está caçando a sua presa.");
   }
+
+  @override
+  String toString() {
+    return "Gato | Nome: $nome, Peso: $peso Kg,";
+  }
 }
 
 void main() {
@@ -62,4 +67,5 @@ void main() {
   onca.fazer_som();
 
   print(cachorro);
+  print(onca);
 }
