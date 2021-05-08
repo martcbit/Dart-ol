@@ -1,4 +1,4 @@
-class Animal {
+abstract class Animal {
   String nome = "";
   double peso = 0.0;
 
@@ -12,9 +12,8 @@ class Animal {
     print("$nome está se hidratando.");
   }
 
-  void fazer_som() {
-    print("$nome está fazendo algum som!!");
-  }
+  void
+      fazer_som(); //Necessario utilizar o @override nas classes que herdam e etc...
 
   @override
   String toString() {
@@ -73,4 +72,7 @@ void main() {
 
   print(cachorro);
   print(onca);
+
+  //Animal animal1 = Animal("Coelho", 5.0);
+  //print(animal1);
 }
