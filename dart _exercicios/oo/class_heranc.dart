@@ -11,12 +11,19 @@ class Animal {
   void beber_agua() {
     print("$nome está se hidratando.");
   }
+  void fazer_som(){
+    print("$nome está fazendo algum som!!")
+  }
 }
 
 class Cachorro extends Animal {
   String raca = "";
 
   Cachorro(String nome, double peso, this.raca) : super(nome, peso);
+
+  void fazer_som(){
+    print("$nome está fazendo algum som!!")
+  }
 }
 
 class Onca extends Animal {
