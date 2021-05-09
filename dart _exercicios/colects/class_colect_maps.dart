@@ -34,4 +34,10 @@ void main() {
   Map<String, InfosPessoa> pessoas = Map();
   pessoas["Burns"] = InfosPessoa(40);
   pessoas["Sideshow Bob"] = InfosPessoa(35);
+
+  print(pessoas);
+  pessoas.remove("Burns");
+  print(pessoas);
+  pessoas["Burns"] = InfosPessoa(40);
+  print(pessoas);
 }
