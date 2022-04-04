@@ -1,0 +1,19 @@
+funcao (p1, p2) {
+    // 10 s -> p1 
+    sentenca #01
+    sentenca #02
+    sentenca #03
+
+    return (p2) {
+        // 1s -> p2
+        sentenca #04
+        sentenca #05
+    }
+    
+}
+var funcaoForaCom3 = funcaoFora(3)
+funcaoForaCom3(17) //1s 
+funcaoForaCom3(39) //1s 
+funcaoForaCom3(92) //1s 
+
+Total: 13s
